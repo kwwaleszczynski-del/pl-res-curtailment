@@ -1,0 +1,7 @@
+season,day_type,days,share_days_ordered,mean_gwh_per_day,total_gwh
+Apr-Sep,saturday,51,0.9216,8.008,408.41
+Apr-Sep,sunday_holiday,62,0.9194,13.1332,814.2582
+Apr-Sep,workday,260,0.8462,4.8575,1262.9563
+Oct-Mar,saturday,55,0.4727,1.8163,99.8991
+Oct-Mar,sunday_holiday,69,0.6087,3.7431,258.2743
+Oct-Mar,workday,265,0.4491,1.4777,391.5974

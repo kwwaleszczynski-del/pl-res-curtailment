@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pl-res-curtailment"
+version = "0.1.0"
+description = "Tracker of non-market redispatch (curtailment) of solar and wind ordered by the Polish TSO, on PSE open data: volumes, drivers, value and overlap with negative prices."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Konrad Waleszczyński" }]
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "pyarrow>=14",
+    "requests>=2.31",
+    "matplotlib>=3.8",
+    "pse-opendata @ git+https://github.com/kwwaleszczynski-del/pse-opendata@8b01ec882b6f3af9c9ea91308293dda64108d705",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+pl-res-curtailment = "pl_res_curtailment.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pl_res_curtailment = ["data/*.csv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]

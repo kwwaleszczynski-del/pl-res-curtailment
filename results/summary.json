@@ -1,0 +1,747 @@
+{
+  "meta": {
+    "data_downloaded": "2026-10-26",
+    "last_day": "2026-10-25",
+    "last_order_local_end": "2026-10-25 14:00",
+    "last_system_local_end": "2026-10-26 00:00",
+    "last_cen_local_end": "2026-10-25 00:00"
+  },
+  "period": {
+    "first_interval_utc": "2024-09-23 22:00",
+    "last_interval_utc": "2026-10-25 22:45"
+  },
+  "totals": {
+    "pv_balance": 2244.2,
+    "pv_network": 16.9,
+    "wind_balance": 932.3,
+    "wind_network": 42.0,
+    "total_gwh": 3235.4
+  },
+  "annual": {
+    "2024": {
+      "intervals": 9508.0,
+      "coverage": 0.2706,
+      "pv_balance": 21.7476,
+      "pv_network": 0.0762,
+      "wind_balance": 30.8806,
+      "wind_network": 7.8739,
+      "pv_gwh": 21.8238,
+      "wind_gwh": 38.7544,
+      "total_gwh": 60.5782,
+      "pv_output_gwh": 2260.6116,
+      "wind_output_gwh": 7662.9808,
+      "pv_share": 0.0096,
+      "wind_share": 0.005,
+      "hours_ordered": 232.5,
+      "days_ordered": 22.0,
+      "peak_mw": 2038.3,
+      "value_rce": 3.4011,
+      "value_rce_floor": 3.7967,
+      "value_cen_floor": 7.584,
+      "cen_coverage": 1.0,
+      "neg_qh": 216.0,
+      "neg_qh_ordered": 128.0,
+      "share_at_neg": 0.521
+    },
+    "2025": {
+      "intervals": 35040.0,
+      "coverage": 1.0,
+      "pv_balance": 967.9869,
+      "pv_network": 14.4071,
+      "wind_balance": 379.5886,
+      "wind_network": 15.478,
+      "pv_gwh": 982.394,
+      "wind_gwh": 395.0666,
+      "total_gwh": 1377.4606,
+      "pv_output_gwh": 19228.6198,
+      "wind_output_gwh": 21893.7317,
+      "pv_share": 0.0486,
+      "wind_share": 0.0177,
+      "hours_ordered": 2529.75,
+      "days_ordered": 266.0,
+      "peak_mw": 4159.5,
+      "value_rce": 111.3745,
+      "value_rce_floor": 149.4413,
+      "value_cen_floor": 242.936,
+      "cen_coverage": 1.0,
+      "neg_qh": 1414.0,
+      "neg_qh_ordered": 1370.0,
+      "share_at_neg": 0.3675
+    },
+    "2026": {
+      "intervals": 28608.0,
+      "coverage": 0.8164,
+      "pv_balance": 1254.5106,
+      "pv_network": 2.3782,
+      "wind_balance": 521.8203,
+      "wind_network": 18.6473,
+      "pv_gwh": 1256.8888,
+      "wind_gwh": 540.4677,
+      "total_gwh": 1797.3565,
+      "pv_output_gwh": 21545.0951,
+      "wind_output_gwh": 17002.4929,
+      "pv_share": 0.0551,
+      "wind_share": 0.0308,
+      "hours_ordered": 1738.25,
+      "days_ordered": 223.0,
+      "peak_mw": 5372.5,
+      "value_rce": 177.0821,
+      "value_rce_floor": 249.8079,
+      "value_cen_floor": 353.3677,
+      "cen_coverage": 0.9959,
+      "neg_qh": 1336.0,
+      "neg_qh_ordered": 1291.0,
+      "share_at_neg": 0.3208
+    }
+  },
+  "trend": {
+    "complete_months": 24,
+    "first_complete_month": "2024-10",
+    "last_complete_month": "2026-09",
+    "yoy": {
+      "months": "01..09",
+      "year": 2026,
+      "previous": 2025,
+      "pv_gwh": [
+        928.3,
+        1238.8,
+        0.334
+      ],
+      "wind_gwh": [
+        239.4,
+        518.3,
+        1.165
+      ],
+      "total_gwh": [
+        1167.6,
+        1757.0,
+        0.505
+      ],
+      "value_rce_floor": [
+        102.2,
+        240.5,
+        1.353
+      ],
+      "hours_ordered": [
+        2188.0,
+        1673.5,
+        -0.235
+      ]
+    },
+    "rolling12_last": {
+      "to": "2026-09",
+      "gwh": 1966.8
+    },
+    "rolling12_first": {
+      "to": "2025-09",
+      "gwh": 1207.4
+    }
+  },
+  "cen_spikes": {
+    "threshold": 1000.0,
+    "energy_share": 0.0071,
+    "value_share": 0.1558,
+    "energy_share_cen_positive": 0.4611
+  },
+  "value": {
+    "2024-pv": {
+      "gwh": 21.824,
+      "rce": 0.981,
+      "rce_floor": 1.209,
+      "cen_floor": 2.799,
+      "rce_avg": 44.951,
+      "cen_avg": -36.957
+    },
+    "2024-wind": {
+      "gwh": 38.754,
+      "rce": 2.42,
+      "rce_floor": 2.588,
+      "cen_floor": 4.785,
+      "rce_avg": 62.448,
+      "cen_avg": 5.161
+    },
+    "2025-pv": {
+      "gwh": 982.394,
+      "rce": 54.358,
+      "rce_floor": 86.372,
+      "cen_floor": 127.295,
+      "rce_avg": 55.332,
+      "cen_avg": -49.433
+    },
+    "2025-wind": {
+      "gwh": 395.067,
+      "rce": 57.016,
+      "rce_floor": 63.07,
+      "cen_floor": 115.641,
+      "rce_avg": 144.321,
+      "cen_avg": 181.068
+    },
+    "2026-pv": {
+      "gwh": 1256.889,
+      "rce": 117.935,
+      "rce_floor": 166.445,
+      "cen_floor": 219.486,
+      "rce_avg": 93.831,
+      "cen_avg": -415.864
+    },
+    "2026-wind": {
+      "gwh": 540.468,
+      "rce": 59.147,
+      "rce_floor": 83.363,
+      "cen_floor": 133.881,
+      "rce_avg": 109.436,
+      "cen_avg": -54.5
+    }
+  },
+  "overlap": {
+    "2024": {
+      "neg_qh": 216.0,
+      "ordered_qh": 930.0,
+      "neg_with_order": 0.5926,
+      "order_at_neg": 0.1376,
+      "gwh_at_neg": 31.5602,
+      "gwh_at_pos": 29.018,
+      "pv_gwh_at_neg": 13.6178,
+      "wind_gwh_at_neg": 17.9424
+    },
+    "2025": {
+      "neg_qh": 1414.0,
+      "ordered_qh": 10119.0,
+      "neg_with_order": 0.9689,
+      "order_at_neg": 0.1354,
+      "gwh_at_neg": 506.2596,
+      "gwh_at_pos": 871.201,
+      "pv_gwh_at_neg": 422.3473,
+      "wind_gwh_at_neg": 83.9123
+    },
+    "2026": {
+      "neg_qh": 1336.0,
+      "ordered_qh": 6953.0,
+      "neg_with_order": 0.9663,
+      "order_at_neg": 0.1857,
+      "gwh_at_neg": 576.6473,
+      "gwh_at_pos": 1220.7092,
+      "pv_gwh_at_neg": 394.6965,
+      "wind_gwh_at_neg": 181.9508
+    },
+    "all": {
+      "neg_qh": 2966.0,
+      "ordered_qh": 18002.0,
+      "neg_with_order": 0.9403,
+      "order_at_neg": 0.1549,
+      "gwh_at_neg": 1114.4671,
+      "gwh_at_pos": 2120.9282,
+      "pv_gwh_at_neg": 830.6616,
+      "wind_gwh_at_neg": 283.8055
+    }
+  },
+  "voluntary": {
+    "pv": {
+      "central_gwh": -100.455,
+      "low_gwh": -139.0481,
+      "high_gwh": 273.962,
+      "placebo_share": -0.0625,
+      "neg_expected_gwh": 6271.7187,
+      "neg_ordered_gwh": 830.6614,
+      "neg_no_order_share": 0.0478,
+      "neg_ordered_share": -0.019,
+      "identified": false
+    },
+    "wind": {
+      "central_gwh": 517.2053,
+      "low_gwh": 424.8261,
+      "high_gwh": 546.2967,
+      "placebo_share": 0.0113,
+      "neg_expected_gwh": 2684.2739,
+      "neg_ordered_gwh": 283.8055,
+      "neg_no_order_share": 0.1712,
+      "neg_ordered_share": 0.2011,
+      "identified": true
+    }
+  },
+  "daytype": [
+    {
+      "season": "Apr-Sep",
+      "day_type": "saturday",
+      "days": 51,
+      "share_days_ordered": 0.922,
+      "mean_gwh_per_day": 8.008,
+      "total_gwh": 408.41
+    },
+    {
+      "season": "Apr-Sep",
+      "day_type": "sunday_holiday",
+      "days": 62,
+      "share_days_ordered": 0.919,
+      "mean_gwh_per_day": 13.133,
+      "total_gwh": 814.258
+    },
+    {
+      "season": "Apr-Sep",
+      "day_type": "workday",
+      "days": 260,
+      "share_days_ordered": 0.846,
+      "mean_gwh_per_day": 4.858,
+      "total_gwh": 1262.956
+    },
+    {
+      "season": "Oct-Mar",
+      "day_type": "saturday",
+      "days": 55,
+      "share_days_ordered": 0.473,
+      "mean_gwh_per_day": 1.816,
+      "total_gwh": 99.899
+    },
+    {
+      "season": "Oct-Mar",
+      "day_type": "sunday_holiday",
+      "days": 69,
+      "share_days_ordered": 0.609,
+      "mean_gwh_per_day": 3.743,
+      "total_gwh": 258.274
+    },
+    {
+      "season": "Oct-Mar",
+      "day_type": "workday",
+      "days": 265,
+      "share_days_ordered": 0.449,
+      "mean_gwh_per_day": 1.478,
+      "total_gwh": 391.597
+    }
+  ],
+  "drivers": {
+    "residual": {
+      "< 4": {
+        "intervals": 1763.0,
+        "share_of_time": 0.0241,
+        "p_order": 0.9733,
+        "mean_mw": 1769.3292,
+        "share_of_energy": 0.241
+      },
+      "4-6": {
+        "intervals": 3353.0,
+        "share_of_time": 0.0458,
+        "p_order": 0.8986,
+        "mean_mw": 1131.5219,
+        "share_of_energy": 0.2932
+      },
+      "6-8": {
+        "intervals": 5565.0,
+        "share_of_time": 0.0761,
+        "p_order": 0.7382,
+        "mean_mw": 644.3302,
+        "share_of_energy": 0.2771
+      },
+      "8-10": {
+        "intervals": 7527.0,
+        "share_of_time": 0.1029,
+        "p_order": 0.4002,
+        "mean_mw": 216.6515,
+        "share_of_energy": 0.126
+      },
+      "10-12": {
+        "intervals": 10347.0,
+        "share_of_time": 0.1414,
+        "p_order": 0.1962,
+        "mean_mw": 55.373,
+        "share_of_energy": 0.0443
+      },
+      "12-14": {
+        "intervals": 12806.0,
+        "share_of_time": 0.1751,
+        "p_order": 0.1231,
+        "mean_mw": 14.4649,
+        "share_of_energy": 0.0143
+      },
+      ">= 14": {
+        "intervals": 31795.0,
+        "share_of_time": 0.4346,
+        "p_order": 0.0801,
+        "mean_mw": 1.6872,
+        "share_of_energy": 0.0041
+      }
+    },
+    "export": {
+      "import > 2": {
+        "intervals": 5915.0,
+        "share_of_time": 0.0809,
+        "p_order": 0.093,
+        "mean_mw": 2.502,
+        "share_of_energy": 0.0011
+      },
+      "import 1-2": {
+        "intervals": 10910.0,
+        "share_of_time": 0.1491,
+        "p_order": 0.0925,
+        "mean_mw": 8.6155,
+        "share_of_energy": 0.0073
+      },
+      "import 0-1": {
+        "intervals": 17305.0,
+        "share_of_time": 0.2365,
+        "p_order": 0.1411,
+        "mean_mw": 54.3267,
+        "share_of_energy": 0.0726
+      },
+      "export 0-1": {
+        "intervals": 18779.0,
+        "share_of_time": 0.2567,
+        "p_order": 0.2905,
+        "mean_mw": 200.8396,
+        "share_of_energy": 0.2914
+      },
+      "export 1-2": {
+        "intervals": 10726.0,
+        "share_of_time": 0.1466,
+        "p_order": 0.3675,
+        "mean_mw": 335.5576,
+        "share_of_energy": 0.2781
+      },
+      "export 2-3": {
+        "intervals": 6285.0,
+        "share_of_time": 0.0859,
+        "p_order": 0.4621,
+        "mean_mw": 453.2005,
+        "share_of_energy": 0.2201
+      },
+      "export > 3": {
+        "intervals": 3236.0,
+        "share_of_time": 0.0442,
+        "p_order": 0.5253,
+        "mean_mw": 517.1635,
+        "share_of_energy": 0.1293
+      }
+    },
+    "price": {
+      "< -100": {
+        "intervals": 470.0,
+        "share_of_time": 0.0064,
+        "p_order": 0.9489,
+        "mean_mw": 2113.6055,
+        "share_of_energy": 0.0768
+      },
+      "-100 to 0": {
+        "intervals": 2496.0,
+        "share_of_time": 0.0341,
+        "p_order": 0.9387,
+        "mean_mw": 1388.0103,
+        "share_of_energy": 0.2677
+      },
+      "0-50": {
+        "intervals": 2384.0,
+        "share_of_time": 0.0326,
+        "p_order": 0.8679,
+        "mean_mw": 988.5215,
+        "share_of_energy": 0.1821
+      },
+      "50-150": {
+        "intervals": 1977.0,
+        "share_of_time": 0.027,
+        "p_order": 0.825,
+        "mean_mw": 785.2188,
+        "share_of_energy": 0.12
+      },
+      "150-300": {
+        "intervals": 4146.0,
+        "share_of_time": 0.0567,
+        "p_order": 0.652,
+        "mean_mw": 516.7614,
+        "share_of_energy": 0.1656
+      },
+      "300-500": {
+        "intervals": 32631.0,
+        "share_of_time": 0.446,
+        "p_order": 0.1972,
+        "mean_mw": 70.5261,
+        "share_of_energy": 0.1778
+      },
+      ">= 500": {
+        "intervals": 29052.0,
+        "share_of_time": 0.3971,
+        "p_order": 0.0817,
+        "mean_mw": 4.5047,
+        "share_of_energy": 0.0101
+      }
+    },
+    "demand": {
+      "< 13": {
+        "intervals": 2486.0,
+        "share_of_time": 0.034,
+        "p_order": 0.2148,
+        "mean_mw": 275.478,
+        "share_of_energy": 0.0529
+      },
+      "13-15": {
+        "intervals": 10263.0,
+        "share_of_time": 0.1403,
+        "p_order": 0.255,
+        "mean_mw": 226.0716,
+        "share_of_energy": 0.1793
+      },
+      "15-17": {
+        "intervals": 14688.0,
+        "share_of_time": 0.2008,
+        "p_order": 0.2388,
+        "mean_mw": 202.4774,
+        "share_of_energy": 0.2298
+      },
+      "17-19": {
+        "intervals": 14400.0,
+        "share_of_time": 0.1968,
+        "p_order": 0.2973,
+        "mean_mw": 218.4746,
+        "share_of_energy": 0.2431
+      },
+      "19-21": {
+        "intervals": 17214.0,
+        "share_of_time": 0.2353,
+        "p_order": 0.3006,
+        "mean_mw": 207.0855,
+        "share_of_energy": 0.2755
+      },
+      "21-23": {
+        "intervals": 8798.0,
+        "share_of_time": 0.1203,
+        "p_order": 0.1404,
+        "mean_mw": 27.2192,
+        "share_of_energy": 0.0185
+      },
+      ">= 23": {
+        "intervals": 5307.0,
+        "share_of_time": 0.0725,
+        "p_order": 0.123,
+        "mean_mw": 2.3185,
+        "share_of_energy": 0.001
+      }
+    },
+    "pv_share": {
+      "< 10": {
+        "intervals": 47932.0,
+        "share_of_time": 0.6552,
+        "p_order": 0.1091,
+        "mean_mw": 29.0508,
+        "share_of_energy": 0.1076
+      },
+      "10-30": {
+        "intervals": 10405.0,
+        "share_of_time": 0.1422,
+        "p_order": 0.2512,
+        "mean_mw": 72.2636,
+        "share_of_energy": 0.0581
+      },
+      "30-50": {
+        "intervals": 8269.0,
+        "share_of_time": 0.113,
+        "p_order": 0.5338,
+        "mean_mw": 407.9385,
+        "share_of_energy": 0.2607
+      },
+      "50-60": {
+        "intervals": 3369.0,
+        "share_of_time": 0.0461,
+        "p_order": 0.8219,
+        "mean_mw": 900.6652,
+        "share_of_energy": 0.2345
+      },
+      "60-70": {
+        "intervals": 2087.0,
+        "share_of_time": 0.0285,
+        "p_order": 0.9219,
+        "mean_mw": 1242.3143,
+        "share_of_energy": 0.2003
+      },
+      "70-80": {
+        "intervals": 961.0,
+        "share_of_time": 0.0131,
+        "p_order": 0.9542,
+        "mean_mw": 1486.6909,
+        "share_of_energy": 0.1104
+      },
+      ">= 80": {
+        "intervals": 133.0,
+        "share_of_time": 0.0018,
+        "p_order": 1.0,
+        "mean_mw": 2768.4977,
+        "share_of_energy": 0.0285
+      }
+    }
+  },
+  "top_days": [
+    {
+      "date": "2026-04-05",
+      "weekday": "Sun",
+      "day_type": "sunday_holiday",
+      "holiday": "Easter Sunday",
+      "pv_gwh": 15.91,
+      "wind_gwh": 36.28,
+      "total_gwh": 52.19,
+      "peak_mw": 5372.5,
+      "min_rce": -761.26,
+      "min_residual_gw": -2.47,
+      "max_export_gw": 4.61
+    },
+    {
+      "date": "2026-04-06",
+      "weekday": "Mon",
+      "day_type": "sunday_holiday",
+      "holiday": "Easter Monday",
+      "pv_gwh": 7.49,
+      "wind_gwh": 36.72,
+      "total_gwh": 44.21,
+      "peak_mw": 4747.2,
+      "min_rce": -791.32,
+      "min_residual_gw": 0.34,
+      "max_export_gw": 5.01
+    },
+    {
+      "date": "2026-06-14",
+      "weekday": "Sun",
+      "day_type": "sunday_holiday",
+      "holiday": "",
+      "pv_gwh": 12.45,
+      "wind_gwh": 22.62,
+      "total_gwh": 35.06,
+      "peak_mw": 2772.6,
+      "min_rce": -77.02,
+      "min_residual_gw": 3.95,
+      "max_export_gw": 1.75
+    },
+    {
+      "date": "2026-07-08",
+      "weekday": "Wed",
+      "day_type": "workday",
+      "holiday": "",
+      "pv_gwh": 7.62,
+      "wind_gwh": 25.66,
+      "total_gwh": 33.28,
+      "peak_mw": 4065.5,
+      "min_rce": -50.74,
+      "min_residual_gw": 1.32,
+      "max_export_gw": 3.54
+    },
+    {
+      "date": "2025-04-20",
+      "weekday": "Sun",
+      "day_type": "sunday_holiday",
+      "holiday": "Easter Sunday",
+      "pv_gwh": 31.15,
+      "wind_gwh": 0.0,
+      "total_gwh": 31.15,
+      "peak_mw": 3698.2,
+      "min_rce": -341.7,
+      "min_residual_gw": 0.34,
+      "max_export_gw": 3.32
+    },
+    {
+      "date": "2026-05-03",
+      "weekday": "Sun",
+      "day_type": "sunday_holiday",
+      "holiday": "Constitution Day",
+      "pv_gwh": 27.06,
+      "wind_gwh": 1.92,
+      "total_gwh": 28.97,
+      "peak_mw": 2859.7,
+      "min_rce": -508.55,
+      "min_residual_gw": 0.19,
+      "max_export_gw": 3.63
+    },
+    {
+      "date": "2025-05-04",
+      "weekday": "Sun",
+      "day_type": "sunday_holiday",
+      "holiday": "",
+      "pv_gwh": 17.43,
+      "wind_gwh": 10.32,
+      "total_gwh": 27.75,
+      "peak_mw": 3858.0,
+      "min_rce": -55.32,
+      "min_residual_gw": 0.9,
+      "max_export_gw": 2.94
+    },
+    {
+      "date": "2026-03-01",
+      "weekday": "Sun",
+      "day_type": "sunday_holiday",
+      "holiday": "",
+      "pv_gwh": 8.65,
+      "wind_gwh": 17.92,
+      "total_gwh": 26.57,
+      "peak_mw": 2681.8,
+      "min_rce": -2.19,
+      "min_residual_gw": 2.88,
+      "max_export_gw": 3.74
+    },
+    {
+      "date": "2025-04-06",
+      "weekday": "Sun",
+      "day_type": "sunday_holiday",
+      "holiday": "",
+      "pv_gwh": 12.08,
+      "wind_gwh": 14.15,
+      "total_gwh": 26.23,
+      "peak_mw": 4009.6,
+      "min_rce": -288.09,
+      "min_residual_gw": 3.23,
+      "max_export_gw": 3.61
+    },
+    {
+      "date": "2026-04-26",
+      "weekday": "Sun",
+      "day_type": "sunday_holiday",
+      "holiday": "",
+      "pv_gwh": 14.43,
+      "wind_gwh": 11.39,
+      "total_gwh": 25.82,
+      "peak_mw": 3505.8,
+      "min_rce": -891.34,
+      "min_residual_gw": 2.41,
+      "max_export_gw": 3.93
+    }
+  ],
+  "sources": {
+    "2023": {
+      "report_pv": 0.0,
+      "report_wind": 0.0,
+      "announced_pv": 0.0,
+      "announced_wind": 0.0,
+      "announced_other": 9.1,
+      "ure_pv": 24.3,
+      "ure_wind": 41.8,
+      "coverage_pv": 0.0,
+      "coverage_wind": 0.0
+    },
+    "2024": {
+      "report_pv": 21.8,
+      "report_wind": 38.8,
+      "announced_pv": 520.0,
+      "announced_wind": 66.2,
+      "announced_other": 25.7,
+      "ure_pv": 597.3,
+      "ure_wind": 125.1,
+      "coverage_pv": 0.9,
+      "coverage_wind": 0.8
+    },
+    "2025": {
+      "report_pv": 982.4,
+      "report_wind": 395.1,
+      "announced_pv": 0.0,
+      "announced_wind": 0.0,
+      "announced_other": 0.0,
+      "ure_pv": null,
+      "ure_wind": null,
+      "coverage_pv": null,
+      "coverage_wind": null
+    },
+    "2026": {
+      "report_pv": 1256.9,
+      "report_wind": 540.5,
+      "announced_pv": 0.0,
+      "announced_wind": 0.0,
+      "announced_other": 0.0,
+      "ure_pv": null,
+      "ure_wind": null,
+      "coverage_pv": null,
+      "coverage_wind": null
+    }
+  }
+}
