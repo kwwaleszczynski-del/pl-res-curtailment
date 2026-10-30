@@ -64,7 +64,7 @@ energy divided by actual plus curtailed output.
 ## Data
 
 All series come from the PSE reports API (`https://api.raporty.pse.pl`) through
-[pse-opendata](https://github.com/kwwaleszczynski-del/pse-opendata) (installed from GitHub, pinned to a commit), which
+[pse-opendata](https://pypi.org/project/pse-opendata/) (from PyPI, `pse-opendata>=0.2,<0.3`), which
 caches whole months as Parquet files in `data/` and downloads a month again until its revision window has passed.
 
 | Report | Fields used | Resolution | From | Notes |
