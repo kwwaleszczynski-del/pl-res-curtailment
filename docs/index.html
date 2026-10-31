@@ -213,6 +213,18 @@ function render() {
       hoverlabel: { bgcolor: t.surface, bordercolor: t.axis, font: { color: t.ink } },
       xaxis: axis(t, lay.xaxis), yaxis: axis(t, lay.yaxis),
     });
+    if (innerWidth < 760) {  // phone: slanted category labels, smaller ticks, long axis titles on two lines
+      for (const k of ["xaxis", "yaxis"]) {
+        const a = layout[k] = Object.assign({}, layout[k]);
+        a.tickfont = Object.assign({}, a.tickfont, { size: 10 });
+        const s = a.title && a.title.text;
+        if (s && s.length > 36 && !s.includes("<br>")) {
+          const i = s.lastIndexOf(" ", Math.ceil(s.length / 2));
+          a.title = Object.assign({}, a.title, { text: s.slice(0, i) + "<br>" + s.slice(i + 1) });
+        }
+      }
+      if (layout.xaxis.type === "category") layout.xaxis.tickangle = -45;
+    }
     Plotly.react(el, fig.data, layout, { responsive: true, displaylogo: false });
   }
 }
