@@ -49,7 +49,8 @@ energy divided by actual plus curtailed output.
   (1,114 of 3,235 GWh). Most ordered curtailment happens at positive day-ahead prices.
 - **Voluntary curtailment.** In negative-price quarter-hours wind output fell 17-20% below the output expected from
   PSE's day-ahead plan beyond what PSE ordered: about 517 GWh (425-546 GWh across method variants) since September
-  2024, next to 284 GWh ordered by PSE in the same quarter-hours. For PV the estimate is not identified: in
+  2024, next to 284 GWh ordered by PSE in the same quarter-hours. This is a lower bound: the plan is published after
+  the day-ahead auction, so reductions already scheduled there are not counted. For PV the estimate is not identified: in
   positive-price quarter-hours with an order, actual plus curtailed PV was already 6% above the expectation, so
   voluntary switching-off cannot be separated from forecast error.
 
@@ -131,7 +132,16 @@ in the others):
 ```
 
 The shortfall $`S_t`$ summed over negative-price quarter-hours is output that was neither delivered nor ordered:
-market participants switching off on their own, plus forecast error. As a placebo, the same shortfall in
+market participants switching off on their own, plus forecast error.
+
+The plan is not an unconstrained expectation. PSE publishes the coordinated plan (PKD) for day D on D-1 after the
+day-ahead (SDAC) auction has cleared: over the 840 days from 14 June 2024 to 30 September 2026 the first
+publication reported by the API came between 15:13 and 20:30 local time (median 15:47; measured in
+[pl-forecast-bench](https://github.com/kwwaleszczynski-del/pl-forecast-bench)), against market results at about
+13:00. If the plan already includes reductions that wind and PV operators scheduled in the day-ahead market for
+negative prices, those are not in the shortfall, so the voluntary figure is a lower bound for all price-driven
+curtailment; it measures what was switched off beyond the plan, for example intraday or in real time. Whether and
+how PSE's plan includes such schedules is not documented in the data and is to be verified. As a placebo, the same shortfall in
 positive-price quarter-hours with an order cannot be voluntary; the range reported combines four baselines with and
 without subtracting the placebo share. Wind passes this check (placebo +1%), PV does not (placebo -6%: curtailment is
 ordered when PV beats the forecast, and the ordered volume need not equal the energy actually lost).
@@ -177,7 +187,8 @@ public data, and compensation is paid per unit, on application and after verific
 - Announcements before 24 September 2024 are ordered hourly MW in their last published version; a few orders were
   announced without hourly values (listed as events) and some days do not state the technology.
 - The voluntary-curtailment estimate relies on PSE's day-ahead plan as the expected output; it is an indication of
-  scale for wind and not identified for PV.
+  scale for wind, a lower bound if the plan already includes reductions scheduled in the day-ahead market, and not
+  identified for PV.
 - Only TSO-ordered, system-level data are used; nothing here identifies or concerns individual installations.
 
 ## Usage

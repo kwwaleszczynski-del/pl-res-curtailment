@@ -263,7 +263,8 @@ def texts(r: Analysis) -> dict[str, str]:
                      f"{100 * w['neg_no_order_share']:.0f}% below the expectation; across all negative-price quarter-hours "
                      f"the unexplained shortfall is about {w['central_gwh']:.0f} GWh (range {w['low_gwh']:.0f} to "
                      f"{w['high_gwh']:.0f} GWh), next to {w['neg_ordered_gwh']:.0f} GWh ordered by PSE in the same "
-                     f"quarter-hours.")
+                     f"quarter-hours. The plan is published after the day-ahead auction, so reductions already "
+                     f"scheduled in it are not counted: the figure is a lower bound.")
     if "pv" in vr.index:
         p = vr.loc["pv"]
         parts.append(f"PV: the estimate is not identified. In positive-price quarter-hours with an order, actual plus "
